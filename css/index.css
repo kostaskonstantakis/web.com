@@ -189,6 +189,29 @@ img {
 	display: none ;
 }
 
+.education-group {
+	margin-top: 1.25rem;
+}
+
+.education-group__heading {
+	margin: 0 0 0.75rem;
+	font-size: 1rem;
+	font-weight: 700;
+	color: #1e293b;
+}
+
+.education-group__cards {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 1rem;
+}
+
+@media (max-width: 640px) {
+	.education-group__cards {
+		grid-template-columns: 1fr;
+	}
+}
+
 @media (prefers-reduced-motion: reduce) {
 	html {
 		scroll-behavior: auto;

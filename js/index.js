@@ -199,7 +199,46 @@ function renderInterestsSection() {
 }
 
 function renderEducationSection() {
-    renderStructuredSection('education-section', 'education');
+    var section = document.getElementById('education-section');
+    if (!section) return;
+
+    var current = getCurrentTranslations();
+    var data = Array.isArray(window.educationData) ? window.educationData : [];
+    var localizedItems = current.education_people || [];
+    var categoryLabels = current.education_categories || {
+        degrees: 'Degrees',
+        certificates: 'Certificates',
+        languages: 'Languages'
+    };
+
+    section.innerHTML = '';
+    section.appendChild(Object.assign(document.createElement('h2'), {
+        className: 'project-section__heading text-lg font-bold text-neutral-800',
+        textContent: current.education_title || 'Education'
+    }));
+
+    ['degrees', 'certificates', 'languages'].forEach(function(category) {
+        var items = data.filter(function(item) { return item.category === category; });
+        if (!items.length) return;
+
+        var group = document.createElement('div');
+        group.className = 'education-group';
+
+        var groupHeading = document.createElement('h3');
+        groupHeading.className = 'education-group__heading';
+        groupHeading.textContent = categoryLabels[category] || category;
+        group.appendChild(groupHeading);
+
+        var cards = document.createElement('div');
+        cards.className = 'education-group__cards';
+
+        items.forEach(function(item) {
+            cards.appendChild(createStructuredCard(Object.assign({}, item, localizedItems[data.indexOf(item)] || {})));
+        });
+
+        group.appendChild(cards);
+        section.appendChild(group);
+    });
 }
 
 (function() {

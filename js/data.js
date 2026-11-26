@@ -118,30 +118,34 @@ window.educationData = [
         icon: "🎓",
         accent: "#0f766e",
         when: "07/2022",
+        category: "degrees",
         tags: ["Bachelor of Science", "Computer Science", "University of Crete", "CSD", "UoC"]
     },
     {
         title: "Certificate of Proficiency in English (ECPE)",
         summary: "University of Michigan & Hellenic American Union.",
-        icon: "🎸",
+        icon: "🎓",
         accent: "#28aa9f",
         when: "12/2024",
+        category: "certificates",
         tags: ["ECPE", "English", "University of Michigan", "UoM", "Hellenic American Union", "HAU"]
     },
-    /*{
-        title: "Business English Seminar/Certificate",
+    {
+        title: "Business English Certificate",
         summary: "Hellenic American Union.",
-        icon: "🎸",
+        icon: "🎓",
         accent: "#28aa9e",
         when: "03/2025",
-        tags: ["Business English", "Seminar", "Hellenic American Union", "HAU", "Certificate"]
-    },*/
+        category: "certificates",
+        tags: ["Business English", "Certificate", "Hellenic American Union", "HAU"]
+    },
     {
         title: "RGT Grade 5",
         summary: "University of West London, London College of Music, United Kingdom.",
         icon: "🎸",
         accent: "#28aa9a",
         when: "09/2026",
+        category: "certificates",
         tags: ["RGT Grade 5", "Electric Guitar", "University of West London", "LCME", "London College of Music", "UWL"]
-    }
+    },
 ];

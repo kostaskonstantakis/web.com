@@ -29,9 +29,15 @@ window.translations = {
         contact_title: "Contact",
         interests_title: "Interests",
         education_title: "Education",
+        education_categories: {
+            degrees: "Degrees",
+            certificates: "Certificates",
+            languages: "Languages"
+        },
         education_people: [
             { title: "BSc in Computer Science", summary: "University of Crete, Department of Computer Science, Heraklion, Crete, Greece.", tags: ["Bachelor of Science", "Computer Science", "University of Crete", "CSD", "UoC"] },
             { title: "Certificate of Proficiency in English (ECPE)", summary: "University of Michigan & Hellenic American Union.", tags: ["ECPE", "English", "University of Michigan", "UoM", "Hellenic American Union", "HAU"] },
+            { title: "Business English Certificate", summary: "Hellenic American Union.", tags: ["Business English", "Certificate", "Hellenic American Union", "HAU"] },
             { title: "RGT Grade 5", summary: "University of West London, London College of Music, United Kingdom.", tags: ["RGT Grade 5", "Electric Guitar", "University of West London", "LCME", "London College of Music", "UWL"] }
         ],
         project_badge: "GitHub Repo",
@@ -89,9 +95,15 @@ window.translations = {
         contact_title: "Επικοινωνία",
         interests_title: "Ενδιαφέροντα",
         education_title: "Εκπαίδευση",
+        education_categories: {
+            degrees: "Πτυχία",
+            certificates: "Πιστοποιητικά",
+            languages: "Γλώσσες"
+        },
         education_people: [
             { title: "Πτυχίο Επιστήμης Υπολογιστών", summary: "Πανεπιστήμιο Κρήτης, Τμήμα Επιστήμης Υπολογιστών, Ηράκλειο, Κρήτη, Ελλάδα.", tags: ["Πτυχίο Bachelor of Science", "Επιστήμη Υπολογιστών", "Πανεπιστήμιο Κρήτης", "CSD", "UoC"] },
             { title: "Πιστοποιητικό Επάρκειας Αγγλικών (ECPE)", summary: "Πανεπιστήμιο του Michigan & Ελληνική Αμερικανική Ένωση.", tags: ["ECPE", "Αγγλικά", "Πανεπιστήμιο του Michigan", "UoM", "Ελληνική Αμερικανική Ένωση", "HAU"] },
+            { title: "Πιστοποιητικό Business English", summary: "Ελληνική Αμερικανική Ένωση.", tags: ["Business English", "Πιστοποιητικό", "Ελληνική Αμερικανική Ένωση", "HAU"] },
             { title: "RGT Grade 5", summary: "Πανεπιστήμιο Δυτικής Λονδίνης, London College of Music, Ηνωμένο Βασίλειο.", tags: ["RGT Grade 5", "Ηλεκτρική κιθάρα", "Πανεπιστήμιο Δυτικής Λονδίνης", "LCME", "London College of Music", "UWL"] }
         ],
         project_badge: "Αποθετήριο GitHub",
@@ -149,9 +161,15 @@ window.translations = {
         contact_title: "Контакты",
         interests_title: "Интересы",
         education_title: "Образование",
+        education_categories: {
+            degrees: "Степени",
+            certificates: "Сертификаты",
+            languages: "Языки"
+        },
         education_people: [
             { title: "Бакалавр компьютерных наук", summary: "Критский университет, факультет компьютерных наук, Ираклион, Крит, Греция.", tags: ["Степень бакалавра", "Компьютерные науки", "Критский университет", "CSD", "Университет Крита"] },
             { title: "Сертификат о владении английским языком (ECPE)", summary: "Университет Мичигана & Эллино-американский союз.", tags: ["ECPE", "Английский", "Университет Мичигана", "UoM", "Эллино-американский союз", "HAU"] },
+            { title: "Сертификат делового английского", summary: "Эллино-американский союз.", tags: ["Деловой английский", "Сертификат", "Эллино-американский союз", "HAU"] },
             { title: "RGT Grade 5", summary: "Университет Западного Лондона, Лондонский колледж музыки, Соединённое Королевство.", tags: ["RGT Grade 5", "Электрогитара", "Университет Западного Лондона", "LCME", "Лондонский колледж музыки", "UWL"] }
         ],
         project_badge: "Репозиторий GitHub",
