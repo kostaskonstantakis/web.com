@@ -61,9 +61,59 @@ img {
 	transform: translateY(0);
 }
 
+.main-navigation nav a {
+	position: relative;
+	text-decoration: none;
+}
+
+.main-navigation nav a::after {
+	position: absolute;
+	bottom: 0.25rem;
+	left: 50%;
+	width: min(6rem, calc(100% - 1.5rem));
+	height: 2px;
+	border-radius: 9999px;
+	background: currentColor;
+	content: "";
+	pointer-events: none;
+	transform: translateX(-50%) scaleX(0);
+	transform-origin: center;
+	transition: transform 200ms ease;
+}
+
+.main-navigation nav a:hover::after,
+.main-navigation nav a:focus-visible::after {
+	transform: translateX(-50%) scaleX(1);
+}
+
+.main-navigation nav a:hover,
+.main-navigation nav a:focus-visible {
+	color: #0284c7;
+}
+
+@media (min-width: 640px) {
+	.main-navigation nav a {
+		width: auto;
+	}
+}
+
 .project-section {
 	position: relative;
 	contain: layout;
+}
+
+@keyframes project-fade-in {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.projects-section .project-section--card {
+	animation: project-fade-in 100ms ease-out both;
 }
 
 .project-section__visual {
@@ -99,6 +149,44 @@ img {
 	color: #475569;
 	font-size: 0.875rem;
 	line-height: 1.5rem;
+}
+
+@property --projects-border-angle {
+	syntax: "<angle>";
+	inherits: false;
+	initial-value: 0deg;
+}
+
+@keyframes projects-border-spin {
+	to {
+		--projects-border-angle: 1turn;
+	}
+}
+
+.projects-section {
+	position: relative;
+	isolation: isolate;
+	border-color: transparent;
+}
+
+.projects-section::before {
+	position: absolute;
+	inset: -1px;
+	padding: 2px;
+	border-radius: inherit;
+	background: repeating-conic-gradient(
+		from var(--projects-border-angle),
+		#0284c7 0deg 3deg,
+		transparent 3deg 10deg
+	);
+	content: "";
+	pointer-events: none;
+	-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+	-webkit-mask-composite: xor;
+	mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+	mask-composite: exclude;
+	animation: projects-border-spin 8s linear infinite;
+	z-index: -1;
 }
 
 .contact-cards {
@@ -215,6 +303,18 @@ img {
 @media (prefers-reduced-motion: reduce) {
 	html {
 		scroll-behavior: auto;
+	}
+
+	.projects-section .project-section--card {
+		animation: none;
+	}
+
+	.projects-section::before {
+		animation: none;
+	}
+
+	.main-navigation nav a::after {
+		transition: none;
 	}
 
 	*, *::before, *::after {

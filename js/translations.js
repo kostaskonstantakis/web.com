@@ -102,9 +102,9 @@ window.translations = {
         },
         education_people: [
             { title: "Πτυχίο Επιστήμης Υπολογιστών", summary: "Πανεπιστήμιο Κρήτης, Τμήμα Επιστήμης Υπολογιστών, Ηράκλειο, Κρήτη, Ελλάδα.", tags: ["Πτυχίο Bachelor of Science", "Επιστήμη Υπολογιστών", "Πανεπιστήμιο Κρήτης", "CSD", "UoC"] },
-            { title: "Πιστοποιητικό Επάρκειας Αγγλικών (ECPE)", summary: "Πανεπιστήμιο του Michigan & Ελληνική Αμερικανική Ένωση.", tags: ["ECPE", "Αγγλικά", "Πανεπιστήμιο του Michigan", "UoM", "Ελληνική Αμερικανική Ένωση", "HAU"] },
-            { title: "Πιστοποιητικό Business English", summary: "Ελληνική Αμερικανική Ένωση.", tags: ["Business English", "Πιστοποιητικό", "Ελληνική Αμερικανική Ένωση", "HAU"] },
-            { title: "RGT Grade 5", summary: "Πανεπιστήμιο Δυτικής Λονδίνης, London College of Music, Ηνωμένο Βασίλειο.", tags: ["RGT Grade 5", "Ηλεκτρική κιθάρα", "Πανεπιστήμιο Δυτικής Λονδίνης", "LCME", "London College of Music", "UWL"] }
+            { title: "Πιστοποιητικό Επάρκειας Αγγλικών (ECPE)", summary: "Πανεπιστήμιο του Michigan & Ελληνοαμερικανική Ένωση.", tags: ["ECPE", "Αγγλικά", "Πανεπιστήμιο του Michigan", "UoM", "Ελληνοαμερικανική Ένωση", "HAU"] },
+            { title: "Πιστοποιητικό Business English", summary: "Ελληνοαμερικανική Ένωση.", tags: ["Business English", "Πιστοποιητικό", "Ελληνοαμερικανική Ένωση", "HAU"] },
+            { title: "RGT Grade 5", summary: "Πανεπιστήμιο Δυτικού Λονδίνου, London College of Music, Ηνωμένο Βασίλειο.", tags: ["RGT Grade 5", "Ηλεκτρική κιθάρα", "Πανεπιστήμιο Δυτικού Λονδίνου", "LCME", "London College of Music", "UWL"] }
         ],
         project_badge: "Αποθετήριο GitHub",
         open_label: "Άνοιγμα",
